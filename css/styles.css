@@ -1,0 +1,187 @@
+/* Global */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  color: #3f3f3f;
+}
+
+#wrapper {
+  width: 800px;
+  margin: 0 auto;
+  text-align: center;
+  background-color: #fff;
+}
+
+#ga-logo img {
+  position: fixed;
+  width: 60px;
+  bottom: 20px;
+  right: 20px;
+}
+
+
+
+/* Header & Nav */
+
+header {
+  margin: -1.5rem 0 4rem 0;
+}
+
+#main-header { 
+  width: 1200px;
+  margin: 1rem auto .8rem;
+}
+
+#main-header h1 {
+  text-align: center;
+  font-size: 9rem;
+  letter-spacing: -3px;
+  margin: 2.5rem 0 1.5rem 0;
+}
+
+#main-nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+#main-nav ul li {
+  display: inline-block;
+  background-color: #f1f1f1;
+  padding: 1rem 2rem .8rem;
+  margin: 0 .5rem;
+  border-radius: 2rem;
+  font-size: .9rem;
+}
+
+#main-nav ul li:hover {
+  display: inline-block;
+  background-color: #e4e4e4;
+  padding: 1rem 2rem .8rem;
+  margin: 0 .5rem;
+  border-radius: 2rem;
+  font-size: .9rem;
+  cursor: pointer;
+}
+
+
+
+/* Person display */
+
+.student, .instructor {
+  position: relative;
+  display: inline-block;
+  width: 21%;
+  margin: 0 2% 2.5rem;
+  border-radius: .25rem;
+  cursor: pointer;
+}
+
+.student img, .instructor img {
+  border-radius: 50%;
+  width: 100%;
+}
+
+.student p, .instructor p {
+  margin-bottom: 0;
+  font-weight: lighter;
+  font-size: .9rem;
+}
+
+.about {
+  position: relative;
+  width: 600px;
+  margin: 0 auto;
+}
+
+.about p:last-child {
+  line-height: 1.5;
+  font-weight: lighter;
+  font-size: .9rem;
+}
+
+.about img {
+  border-radius: 50%;
+  width: 250px;
+}
+
+.close {
+  position: absolute;
+  width: 45px;
+  height: 45px;
+  top: 0;
+  right: 110px;
+  cursor: pointer;
+  text-align: center;
+  background-color: #f1f1f1;
+  border-radius: 50%;
+}
+
+.close:hover {
+  background-color: #e4e4e4;
+}
+
+.about .close p {
+  margin: -.1rem 0 0 .05rem;
+  font-size: 2rem;
+  font-weight: lighter;
+}
+
+.social-links {
+  display: inline-block;
+}
+
+.social-links {
+  margin: 0 .25rem;
+}
+
+
+
+/* Links */
+
+.about a {
+  font-size: .9rem;
+  color: #3f3f3f;
+}
+
+.about a:hover {
+  color: #a8a8a8;
+}
+
+
+
+/* jeremy animation */
+
+.image {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 500px;
+  height: 500px;
+  margin:-60px 0 0 -60px;
+  -webkit-animation:spin 4s linear infinite;
+  -moz-animation:spin 4s linear infinite;
+  animation:spin 4s linear infinite;
+}
+
+@-moz-keyframes spin { 
+  100% { 
+    -moz-transform: rotate(360deg); 
+  } 
+}
+
+@-webkit-keyframes spin {
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
+
+@keyframes spin {
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
